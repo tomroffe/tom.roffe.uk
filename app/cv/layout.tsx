@@ -6,14 +6,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Header />
 
 
-      <div className="m-4 flex grow flex-col gap-4 md:flex-row">
+      <div className="mx-4 flex grow flex-col gap-4 md:flex-row">
         <div className="relative mx-auto container max-w-7xl print:max-w-5xl">
           <div className='hidden print:block'>
             <h1 className="text-center text-4xl font-bold text-gray-800 dark:text-gray-100">Thomas A. Roffe</h1>
             <p className="text-center text-gray-800 dark:text-gray-500 text-sm">Bergholt Road, Colchester</p>
             <p className="text-center text-gray-800 dark:text-gray-500 text-sm">Essex, CO4 5AT</p>
           </div>
-          <div className="flex flex-row">
+          <div className="flex flex-row justify-center">
             <div className="basis-1/4 max-w-64 ">
               <div className="my-4 p-1 mx-1 mb-1 rounded-md dark:text-gray-200 bg-gray-100 dark:bg-gray-700">
                 <div className="mx-auto container pl-1 ">
