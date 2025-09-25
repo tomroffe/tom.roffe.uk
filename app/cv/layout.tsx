@@ -1,11 +1,24 @@
 import Header from '@/app/ui/header';
+import PrintButton from '@/app/components/print-button';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <main className="flex min-h-screen flex-col bg-white dark:bg-gray-800">
       <Header />
 
+      <div className="container mx-auto flex flex-wrap px-3 mx:p-5 flex-row items-center justify-center print:hidden">
 
+        <label className="inline-flex items-center cursor-pointer mr-5">
+          <span className="mr-3 text-sm text-gray-900 dark:text-gray-300">Long</span>
+          <input type="checkbox" value="" className="sr-only peer" />
+          <div className="relative w-9 h-5 md:w-14 md:h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] md:after:top-0.5 md:after:start-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 md:after:h-6 md:after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
+          <span className="ml-3 text-sm text-gray-900 dark:text-gray-300">Short</span>
+        </label>
+
+        <nav className="flex justify-end text-base border-l border-gray-400">
+          <PrintButton />
+        </nav>
+      </div>
       <div className="mx-4 flex grow flex-col gap-4 md:flex-row">
         <div className="relative mx-auto container max-w-7xl print:max-w-5xl">
           <div className='hidden print:block'>
@@ -13,8 +26,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <p className="text-center text-gray-800 dark:text-gray-500 text-sm">Bergholt Road, Colchester</p>
             <p className="text-center text-gray-800 dark:text-gray-500 text-sm">Essex, CO4 5AT</p>
           </div>
-          <div className="flex flex-row justify-center">
-            <div className="basis-1/4 max-w-64 ">
+          <div className="flex flex-col md:flex-row justify-center">
+            <div className="md:basis-1/4 md:max-w-64 ">
               <div className="my-4 p-1 mx-1 mb-1 rounded-md dark:text-gray-200 bg-gray-100 dark:bg-gray-700">
                 <div className="mx-auto container pl-1 ">
                   <div id="telephone-number" className="flex text-sm">
@@ -293,7 +306,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </div>
               </div>
             </div>
-            <div className="basis-3/4 my-4 px-1 mx-1">
+            <div className="md:basis-3/4 my-4 px-1 mx-1">
               <div id="job-1" className="text-gray-700 dark:text-gray-200 rounded-sm bg-gray-100 dark:bg-gray-700 p-2 mb-2">
                 <div className="flex justify-between">
                   <p className="font-medium text-gray-800 dark:text-gray-200">
