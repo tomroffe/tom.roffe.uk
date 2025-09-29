@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { ClipboardIcon, CheckIcon } from "@heroicons/react/24/outline";
 
 export default function GpgToClipboard() {
-  const [status, setStatus] = useState<string>("");
+  const [_status, setStatus] = useState<string>("");
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
 
   const copyFileToClipboard = async () => {

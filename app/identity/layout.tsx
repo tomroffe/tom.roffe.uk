@@ -11,7 +11,7 @@ import Header from '@/app/ui/header';
 import GpgToClipboard from '@/app/components/gpg-clipboard';
 import CommandToClipboard from '@/app/components/textfield-clipboard';
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout() {
   return (
     <main className="flex min-h-screen flex-col bg-gray dark:bg-gray-800">
       <Header />

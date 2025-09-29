@@ -1,5 +1,4 @@
 import {
-  NewspaperIcon,
   HomeIcon,
   AcademicCapIcon,
   IdentificationIcon

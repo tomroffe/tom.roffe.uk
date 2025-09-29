@@ -1,8 +1,8 @@
 import {
-  NewspaperIcon,
+  // NewspaperIcon,
   AcademicCapIcon,
   IdentificationIcon,
-  WrenchScrewdriverIcon
+  // WrenchScrewdriverIcon
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 

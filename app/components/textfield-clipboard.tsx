@@ -7,7 +7,7 @@ import { ClipboardIcon, CheckIcon } from "@heroicons/react/24/outline";
 
 export default function CopyTextInput() {
   const [text] = useState<string>("gpg -v --auto-key-locate clear,wkd,local --locate-keys tom@roffe.uk"); // Set default text
-  const [status, setStatus] = useState<string>("");
+  const [_status, setStatus] = useState<string>("");
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
 
   const copyTextToClipboard = async () => {
