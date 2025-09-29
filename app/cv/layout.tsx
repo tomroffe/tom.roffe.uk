@@ -232,9 +232,7 @@ export default function Layout() {
                     <p className="mx-2 my-1 pl-4 font-light">
                       <span className="dark:bg-gray-600 bg-gray-200 text-gray-600 text-sm inline-flex items-center px-1 mx-0.5 my-0.5 rounded-sm  dark:text-gray-300 border border-gray-400">EC2</span>
                       <span className="dark:bg-gray-600 bg-gray-200 text-gray-600 text-sm inline-flex items-center px-1 mx-0.5 my-0.5 rounded-sm  dark:text-gray-300 border border-gray-400">RDS</span>
-                      <span className="dark:bg-gray-600 bg-gray-200 text-gray-600 text-sm inline-flex items-center px-1 mx-0.5 my-0.5 rounded-sm  dark:text-gray-300 border border-gray-400">Certificate Manager</span>
                       <span className="dark:bg-gray-600 bg-gray-200 text-gray-600 text-sm inline-flex items-center px-1 mx-0.5 my-0.5 rounded-sm  dark:text-gray-300 border border-gray-400">KMS</span>
-                      <span className="dark:bg-gray-600 bg-gray-200 text-gray-600 text-sm inline-flex items-center px-1 mx-0.5 my-0.5 rounded-sm  dark:text-gray-300 border border-gray-400">Directory Services</span>
                       <span className="dark:bg-gray-600 bg-gray-200 text-gray-600 text-sm inline-flex items-center px-1 mx-0.5 my-0.5 rounded-sm  dark:text-gray-300 border border-gray-400">Lambda</span>
                       <span className="dark:bg-gray-600 bg-gray-200 text-gray-600 text-sm inline-flex items-center px-1 mx-0.5 my-0.5 rounded-sm  dark:text-gray-300 border border-gray-400">AWS SSO</span>
                       <span className="dark:bg-gray-600 bg-gray-200 text-gray-600 text-sm inline-flex items-center px-1 mx-0.5 my-0.5 rounded-sm  dark:text-gray-300 border border-gray-400">SNS</span>
@@ -255,6 +253,8 @@ export default function Layout() {
                       <span className="dark:bg-gray-600 bg-gray-200 text-gray-600 text-sm inline-flex items-center px-1 mx-0.5 my-0.5 rounded-sm  dark:text-gray-300 border border-gray-400">Config</span>
                       <span className="dark:bg-gray-600 bg-gray-200 text-gray-600 text-sm inline-flex items-center px-1 mx-0.5 my-0.5 rounded-sm  dark:text-gray-300 border border-gray-400">Inspector</span>
                       <span className="dark:bg-gray-600 bg-gray-200 text-gray-600 text-sm inline-flex items-center px-1 mx-0.5 my-0.5 rounded-sm  dark:text-gray-300 border border-gray-400">Workspace</span>
+                      <span className="dark:bg-gray-600 bg-gray-200 text-gray-600 text-sm inline-flex items-center px-1 mx-0.5 my-0.5 rounded-sm  dark:text-gray-300 border border-gray-400">Certificate Manager</span>
+                      <span className="dark:bg-gray-600 bg-gray-200 text-gray-600 text-sm inline-flex items-center px-1 mx-0.5 my-0.5 rounded-sm  dark:text-gray-300 border border-gray-400">Directory Services</span>
                       <span className="dark:bg-gray-600 bg-gray-200 text-gray-600 text-sm inline-flex items-center px-1 mx-0.5 my-0.5 rounded-sm  dark:text-gray-300 border border-gray-400">Directory Services</span>
                     </p>
                     <p className="mx-2 my-1 pl-3 flex">
@@ -867,7 +867,10 @@ export default function Layout() {
                 <p className="font-bold text-gray-800 dark:text-gray-200 m-2">
                   <span className="font-medium">Systems Support Analyst</span>
                 </p>
-                <ul className="list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                <ul className="short list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                  <li>Provided 1st Line Telephone support for EMEA, Asia and Africa</li>
+                </ul>
+                <ul className="long list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
                   <li>Experience in corporate methods and formal processes.</li>
                   <li>Provided 1st Line Telephone support for EMEA, Asia and Africa</li>
                   <li>All tasks and responsibilities undertaken followed highly detailed protocol for logging and reporting all projects and faults</li>
@@ -888,9 +891,9 @@ export default function Layout() {
                   </p>
                 </div>
                 <p className="font-bold text-gray-800 dark:text-gray-200 m-2">
-                  <span className="font-medium"></span>
+                  <span className="font-medium">Director</span>
                 </p>
-                <ul className="list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                <ul className="long list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
                   <li>More information available on request.</li>
                 </ul>
               </div>
@@ -907,7 +910,7 @@ export default function Layout() {
                 <p className="font-bold text-gray-800 dark:text-gray-200 m-2">
                   <span className="font-medium">Temporary Data Entry Role</span>
                 </p>
-                <ul className="list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                <ul className="long list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
                   <li>More information available on request.</li>
                 </ul>
               </div>
@@ -924,7 +927,7 @@ export default function Layout() {
                 <p className="font-bold text-gray-800 dark:text-gray-200 m-2">
                   <span className="font-medium">Contracted IT Support Engineer</span>
                 </p>
-                <ul className="list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                <ul className="long list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
                   <li>More information available on request.</li>
                 </ul>
               </div>
@@ -940,7 +943,7 @@ export default function Layout() {
                 <p className="font-bold text-gray-800 dark:text-gray-200 m-2">
                   <span className="font-medium">Field IT Support Engineer</span>
                 </p>
-                <ul className="list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                <ul className="long list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
                   <li>More information available on request.</li>
                 </ul>
               </div>

@@ -57,10 +57,8 @@ export default function Layout() {
             <p className="text-gray-800 dark:text-gray-200">1843 654C 3778 DFC5 710D  E46B 9324 5156 BA84 3713</p>
           </div>
           <div className="flex justify-center items-center">
-            <div className=" overflow-x-scroll px-3 pt-2 font-mono text-xs text-gray-800 dark:text-gray-200 bg-gray-200 dark:bg-gray-600 rounded-md">
+            <div className="hidden md:block truncate px-3 pt-2 font-mono text-xs text-gray-800 dark:text-gray-200 bg-gray-200 dark:bg-gray-600 rounded-md">
               <p>-----BEGIN PGP PUBLIC KEY BLOCK-----</p>
-
-
               <p>mQINBFoumnUBEADGv29uYPeWfSqQhUHugFA3j54PgdiPMnJmAfZf3Ye+NxvB+MTp</p>
               <p>On70SwwPRZvo6v6Q4nl7Fqjgl0uD1dA7MOFP5orjwU6Qef2/aCO/kQXBlIHtBlBh</p>
               <p>RHC7INEAvNQKMUiZ6mTtfC/48cq41IWXlWQc+zAPPg+yzHXXYwseSr8s++ytgyEG</p>
@@ -193,8 +191,6 @@ export default function Layout() {
               <p>1vrKI000ITO19HbMtq4KleHA8+zvkt5ZiA6UfFAQ1Gbr9soOdxIEeVCtCMXxEtXq</p>
               <p>8qLuMRRXZPkXcoNrxx/xeA==</p>
               <p>=/IQk</p>
-
-
               <p>-----END PGP PUBLIC KEY BLOCK-----</p>
             </div>
           </div>
