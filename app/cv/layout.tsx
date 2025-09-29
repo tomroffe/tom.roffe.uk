@@ -1,19 +1,21 @@
 import Header from '@/app/ui/header';
 import PrintButton from '@/app/components/print-button';
+import ContentToggle from '@/app/components/short-long-toggle';
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout() {
   return (
     <main className="flex min-h-screen flex-col bg-white dark:bg-gray-800">
       <Header />
 
       <div className="container mx-auto flex flex-wrap px-3 mx:p-5 flex-row items-center justify-center print:hidden">
-
-        <label className="inline-flex items-center cursor-pointer mr-5">
-          <span className="mr-3 text-sm text-gray-900 dark:text-gray-300">Long</span>
-          <input type="checkbox" value="" className="sr-only peer" />
-          <div className="relative w-9 h-5 md:w-14 md:h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] md:after:top-0.5 md:after:start-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 md:after:h-6 md:after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
-          <span className="ml-3 text-sm text-gray-900 dark:text-gray-300">Short</span>
-        </label>
+        {/**/}
+        {/* <label className="inline-flex items-center cursor-pointer mr-5"> */}
+        {/*   <span className="mr-3 text-sm text-gray-900 dark:text-gray-300">Long</span> */}
+        {/*   <input type="checkbox" value="" className="sr-only peer" /> */}
+        {/*   <div className="relative w-9 h-5 md:w-14 md:h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] md:after:top-0.5 md:after:start-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 md:after:h-6 md:after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div> */}
+        {/*   <span className="ml-3 text-sm text-gray-900 dark:text-gray-300">Short</span> */}
+        {/* </label> */}
+        <ContentToggle />
 
         <nav className="flex justify-end text-base border-l border-gray-400">
           <PrintButton />
@@ -89,10 +91,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <p className="font-medium mx-2 my-3">Hoppies &amp; Interests</p>
                   <div className="text-sm">
                     <p className="m-2 px-2 dark:text-gray-300 font-light">
-                      I enjoy many different aspects of computing, maths, science and technology. I'm currently working on several small personal projects with prototyping and control interface hardware (Arduino and RPis). Additionally, I’m working on creating a Stratum 1 NTP server based on the Raspberry Pi platform using GPS as a time source.
+                      I enjoy many different aspects of computing, maths, science and technology. I&apos;m currently working on several small personal projects with prototyping and control interface hardware (Arduino and RPis). Additionally, I&apos;m working on creating a Stratum 1 NTP server based on the Raspberry Pi platform using GPS as a time source.
                     </p>
                     <p className="m-2 px-2 dark:text-gray-300 font-light">
-                      I'm currently a member at a local Weightlifting gym where I regularly go to practise Olympic weightlifting and CrossFit style circuit training and I'm also a keen photographer in my spare time.
+                      I&apos;m currently a member at a local Weightlifting gym where I regularly go to practise Olympic weightlifting and CrossFit style circuit training and I&apos;m also a keen photographer in my spare time.
                     </p>
                   </div>
                 </div>
@@ -319,7 +321,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <p className="font-bold text-gray-800 dark:text-gray-200 m-2">
                   <span className="font-medium">Lead DevOps Engineer</span>
                 </p>
-                <ul className="list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                <ul className="short list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                  <li>Reimplemented CICD platform with greatly improved GitOps intergrations, built times, packaging, build security and integrity (signing, SBOM) for all product platforms and languages</li>
+                  <li>Improved product features and deployments, monitoring and alerting</li>
+                  <li>Enchanced, updated and added security posture. Identifity management and authentication.</li>
+                </ul>
+                <ul className="long list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
                   <li>Backups</li>
                   <li>Monitoring Thanos Terraform, Product Intergration</li>
                   <li>IP SNAT Port Range Mapper for LI</li>
@@ -349,7 +356,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <p className="font-bold text-gray-800 dark:text-gray-200 m-2">
                     <span className="font-medium">Senior DevOps Engineer</span>
                   </p>
-                  <ul className="list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                  <ul className="long list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
                     <li>Supported three teams (IOS, Android, Big Screen) BAU operations in all areas of operation for building, testing, signing and release. Manged production crash/debug analytics environments Sentry 9.x, self-hosted GitLab instance, vCenter and associated compute and storage (Sanology). Managed hybrid mix of local and virtual mac and virtual compute (Ask me about it!). LXC containers.</li>
                     <li>Migrated on-prem Kubernetes clusters’ workloads to Sky’s GKE based cloud Kubernetes cluster. On-prem used MetalLB and Ceph. Migrated Helm based applications to Terraform HCL. Including three Jenkins and Sentry.</li>
                     <li>Re-write Python 2 application to Python 3 (3.11) and reimplemented application infrastructure storage – PV storage to object-storage based FUSE container driver. Implement authentication and TLS.</li>
@@ -360,6 +367,21 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     <li>Interviewed several candidates for DevOps positions within the department. Successfully onboarded two engineers to help support the team ongoing. Worked with Grad team to containerise, secure, and deploy a reporting application. Managed work</li>
                     <li>Re-platformed and rearchitected the existing K8 Jenkins CICD platforms for IOS. Migrated Jenkins Master on Virtual Mac OSX Instances to Kubernetes (GKE). Moved local secrets management to Google Secrets Manager. Adapted multibranch and pipeline jobs aligning with Sky’s Jenkins Security Policy. Defined, designed and tested job history retention, backup and restore. Improved asset/cache storage. Implemented group-based AD matrix authentication. Automated backup, plugin updates with git versioned Jenkins configuration as code. Security hardening, SSH whitelisting. Moved all agents to web sockets. Prometheus metric exporting. Grafana monitoring dashboard definitions.</li>
                     <li>Replaced Jenkins CICD platforms for Android and Big Screen/Desktop Teams using experience gained from IOS team migration. Additionally worked with the teams to adapt to the new environments, including adapting pipelines, creating custom build containers, adapted signing operations.</li>
+                  </ul>
+                  <ul className="short list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                    <li>Replaced Jenkins CICD platforms for Android and Big Screen/Desktop Teams using experience gained from IOS team migration. Additionally worked with the teams to adapt to the new environments, including adapting pipelines, creating custom build containers, adapted signing operations.</li>
+                    <li>Supported iOS, Android, and Big Screen teams in BAU operations for building, testing, signing, and releasing applications.</li>
+                    <li>Managed Sentry 9.x, self-hosted GitLab, vCenter, Sanology, and hybrid Mac/virtual compute environments (LXC containers).</li>
+                    <li> Migrated on-prem Kubernetes (MetalLB, Ceph) to Sky’s GKE cloud, converting Helm apps to Terraform HCL (Jenkins, Sentry).</li>
+                    <li>Rewrote Python 2 app to Python 3.11, shifted storage to object-based FUSE driver, and added authentication/TLS.</li>
+                    <li>Replaced Jenkins Groovy scripts with a custom Sky endpoint, integrating new functionality into GitLab pipelines.</li>
+                    <li>Upgraded 10G switches and core/aggregation layers to meet new compute demands.</li>
+                    <li>Installed 64 Mac Mini M2s, re-cabled data racking to address power/networking limitations.</li>
+                    <li>Evaluated CircleCI for CI/CD, retained enhanced GitLab.</li>
+                    <li>Onboarded two DevOps engineers; supported grad team in containerizing and deploying a reporting app.</li>
+                    <li>Re-platformed iOS Jenkins CI/CD to GKE, integrated Google Secrets Manager, enhanced security, and automated backups.</li>
+                    <li>Upgraded Android and Big Screen Jenkins CI/CD, adapting pipelines and build containers.</li>
+
                   </ul>
                 </div>
                 <div id="engagement-2" className="text-gray-600 dark:text-gray-200 rounded-sm bg-gray-200 dark:bg-gray-600 p-2 my-2">
@@ -374,7 +396,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <p className="font-bold text-gray-800 dark:text-gray-200 m-2">
                     <span className="font-medium">Platform Security Engineer</span>
                   </p>
-                  <ul className="list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                  <ul className="long list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                    <li>Performing various platform risk audits and security assessments. Enhance and improve existing platform tooling for alerting and compliance. for example HMRCs hmrc/platsec-compliance-alerting and hmrc/platsec-aws-scanner</li>
+                    <li>Update and improve existing CI/CD pipeline to include better pre-release testing coverage and security scanning.</li>
+                    <li>On-call and platform security support duties on a rotating basis.</li>
+                  </ul>
+                  <ul className="short list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
                     <li>Performing various platform risk audits and security assessments. Enhance and improve existing platform tooling for alerting and compliance. for example HMRCs hmrc/platsec-compliance-alerting and hmrc/platsec-aws-scanner</li>
                     <li>Update and improve existing CI/CD pipeline to include better pre-release testing coverage and security scanning.</li>
                     <li>On-call and platform security support duties on a rotating basis.</li>
@@ -720,7 +747,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <span className="font-medium">Contract Systems Engineer</span>
                 </p>
                 <ul className="list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
-                  <li>1Day Installation of 2 Supermicro based SAN's running StarWind on Windows 2K8 in Amsterdam, Netherlands at the EvoSwitch Data Center.</li>
+                  <li>1Day Installation of 2 Supermicro based SAN&apos;s running StarWind on Windows 2K8 in Amsterdam, Netherlands at the EvoSwitch Data Center.</li>
                 </ul>
               </div>
               <div id="job-9" className="text-gray-700 dark:text-gray-200 rounded-sm bg-gray-100 dark:bg-gray-700 p-2 mb-2">
@@ -745,7 +772,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <li>Managed and Implemented successful migration from Microsoft Exchange 2003 to Google Apps Service with an 85% reduction in operating and maintenance cost.</li>
                   <li>Designed and built internal web database application for tracking of staff and training equipment and retail/sold equipment to comply with Health and Safety at Height Laws (HSE) and IRATA.</li>
                   <li>Managed marketing campaigns, budgets and production of digital and printed media.</li>
-                  <li>* This role was very wide and varied; I've omitted certain roles and responsibilities for sake of keeping my CV relevant to the industry. But I'm more willing to provide a full description of my duties on request.</li>
+                  <li>* This role was very wide and varied; I&apos;ve omitted certain roles and responsibilities for sake of keeping my CV relevant to the industry. But I&apos;m more willing to provide a full description of my duties on request.</li>
                 </ul>
               </div>
               <div id="job-10" className="text-gray-700 dark:text-gray-200 rounded-sm bg-gray-100 dark:bg-gray-700 p-2 mb-2">
