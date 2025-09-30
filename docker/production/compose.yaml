@@ -1,0 +1,11 @@
+services:
+  tom-roffe-uk:
+    build:
+      context: ../../
+      dockerfile: docker/production/Dockerfile
+    image: tom-roffe-uk
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+
