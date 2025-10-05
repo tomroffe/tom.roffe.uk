@@ -444,7 +444,7 @@ export default function Layout() {
                   </ul>
                 </div>
                 <div id="engagement-5" className="text-gray-600 dark:text-gray-200 rounded-sm bg-gray-200 dark:bg-gray-600 p-2 my-2">
-                  <div className="flex justify-between mt-2">
+                  <div className="flex justify-between">
                     <p className="font-medium text-gray-800 dark:text-gray-200">
                       Hitachi EU
                     </p>
@@ -479,7 +479,19 @@ export default function Layout() {
                   <p className="font-bold text-gray-800 dark:text-gray-200 m-2">
                     <span className="font-medium">Senior DevOps Engineer</span>
                   </p>
-                  <ul className="list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                  <ul className="short list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                    <li>Led infrastructure team in architectural design for system upgrades, focusing on build, test, and release strategies for multiple publications.</li>
+                    <li>Delivered POC for TI’s subscription e-commerce platform using AWS CodePipeline, Terraform, and ECS with EC2, integrating GitOps tooling.</li>
+                    <li>Designed and implemented an image optimization service, reducing CDN and traffic costs by ~30% using Python/Flask API and WebP encoding.</li>
+                    <li>Containerized Decanter Magazine Wine Review Node application, integrating with Jenkins pipelines and provisioning DynamoDB via Terraform.</li>
+                    <li>Supported Marie Claire team with Lambda deployment, performance tuning, and parallel supplier feed processing, reducing time-to-market.</li>
+                    <li>Enhanced application debugging with AWS X-Ray log and event tracing for image optimization service.</li>
+                    <li>Conducted IAM policy audit, consolidated AWS accounts into IAM Organization, and integrated Cisco CloudWatch for improved reporting.</li>
+                    <li>Assisted with production incident troubleshooting and initiated EKS POC for improved container management.</li>
+                    <li>Developed Python API for legal content removal from CDNs and media silos.</li>
+                    <li>Automated CloudFront and Fastly CDN tasks using Jenkins and Terraform pipelines.</li>
+                  </ul>
+                  <ul className="long list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
                     <li>Lead architectural and design steering group for infrastructure team together with the development team for a number of internal system projects to upgrade and update the underlying infrastructure. including some of the development tooling with regards to build, test and release strategies on a number of publications.</li>
                     <li>Deliver POC for Build, Test, Release and Deploy of TI’s subscription ecommerce platform. Platform built with AWS codepipeline, terraform, ECS with EC2 (Originally Fargate) with associated GitOps tooling for build, test and release pipelines to application containers repos.</li>
                     <li>Designed, built and delivered site/content image optimization service which reduced our CDN and traffic transfer cost by approx 30% for non-apple based clients. Image Converters Service allowed for delivery of images encoded in webp for supported browser types, with cdn/cloudfront caching and fallback handling to content origin. Originally designed and written as a Python/Lambda but reimplemented a Flask API due a number of technical limitations integrating webp libraries and size limitation of returned objects.</li>
@@ -504,7 +516,14 @@ export default function Layout() {
                   <p className="font-bold text-gray-800 dark:text-gray-200 m-2">
                     <span className="font-medium">Senior DevOps Engineer</span>
                   </p>
-                  <ul className="list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                  <ul className="short list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                    <li>Designed and implemented AWS Client VPN solution with VPC networking, AWS ACM, and Managed Active Directory for secure access.</li>
+                    <li>Collaborated on Java Spring Boot async streaming application using AWS Kinesis, Lambda, and RDS, with Terraform infrastructure and automated pipelines.</li>
+                    <li>Improved Jenkins build pipelines, implemented Terraform in Docker, and hardened Jenkins hosts for security.</li>
+                    <li>Created role-based AMI images with Packer for faster deployments, integrated with Terraform.</li>
+                    <li>Led Terraform and AWS training for team, documented processes, and supported in-house applications.</li>
+                  </ul>
+                  <ul className="long list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
                     <li>Lead design and implementation of rollout of Remove Access / OpenVPN solution based on AWS Client VPN Services. Designed and configured VPC networking, routing, security into existing deployment. Utilised AWS ACM certificate & Managed Active Directory for user authentication and group based authorisation controls. Managed initial rollout to key stakeholders in initial testing and troubleshooting. Worked with inhouse IT support services to roll out OpenVPN application on managed desktops. Integrated VPN networking into existing inhouse AWS VPC Terraform codebase.</li>
                     <li>Extensive work with BMJ Lead developer to develop the design for BMj’s async streaming application in Java spring boot using AWS Kinesis, Lambda and RDS services. Encouraged use of AWS secrets manager for application secrets. Infrastructure implementation in Terraform. Automated application build and deployment pipeline. Performance and Acceptance testing.</li>
                     <li>Jenkins Build Pipeline Improvements, Operations infrastructure focused. Implement Terraform in Docker. Refactor some existing inhouse terraform modules. Move to IAM role based Terraform. Extensive security harding of Jenkins hosts.</li>
@@ -526,7 +545,14 @@ export default function Layout() {
                   <p className="font-bold text-gray-800 dark:text-gray-200 m-2">
                     <span className="font-medium">DevOps Engineer</span>
                   </p>
-                  <ul className="list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                  <ul className="short list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                    <li>Built Terraform IaC for AWS infrastructure (EC2, RDS, Lambda, ECS, etc.) and developed Docker images in Jenkins pipelines for Python/Node applications.</li>
+                    <li>Refactored Terraform codebase for modularity and consistency, improving DRY principles.</li>
+                    <li>Supported application productionization, ensuring capacity, fault tolerance, and monitoring.</li>
+                    <li>Optimized Packer AMI builds and Ansible playbooks, reducing build times significantly.</li>
+                    <li>Implemented AWS Lambda for cost control by powering down development infrastructure overnight/weekends.</li>
+                  </ul>
+                  <ul className="long list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
                     <li>Terraform IaC built on AWS EC2, RDS, Certificate Manager, KMS, Directory Services, Lambda, SNS, Config, Inspector, SSM, ECS & ECR.</li>
                     <li>Produce and develop docker images within Jenkins pipeline for building various internal and externally hosted applications. Predominantly Python and Node Applications.</li>
                     <li>Rearchitected Terraform codebase to allow more consistent use of shared infrastructure variables, be more DRY and promoted and migrated the use of terraform modules.</li>
@@ -548,7 +574,15 @@ export default function Layout() {
                   <p className="font-bold text-gray-800 dark:text-gray-200 m-2">
                     <span className="font-medium">Senior DevOps Engineer</span>
                   </p>
-                  <ul className="list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                  <ul className="short list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                    <li>Developed Terraform and Ansible for Infor OCCM and IA product deployments across dev, test, and prod AWS environments.</li>
+                    <li>Championed data siloing and least privilege for AAA services, enhancing security.</li>
+                    <li>Created Terraform module for TrendMicro Deep Security Manager, deploying to ~250 servers with Ansible and Packer.</li>
+                    <li>Automated AWS Direct Connect peering and CIS compliance checks using Terraform, CloudFormation, and Lambda.</li>
+                    <li>Managed Git repos, implemented code convergence, and added InSpec testing for Ansible playbooks.</li>
+                    <li>Grew CloudOps team from 2 to 5 engineers, supporting operations and securing contract renewals.</li>
+                  </ul>
+                  <ul className="long list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
                     <li>Terraform IaC built on AWS EC2, RDS, Certificate Manager, KMS, Directory Services, VPC Direct Connect, Lambda, SNS, Config, Inspector, SSM, AWS Workspaces.</li>
                     <li>Part designed and implemented Terraform and Ansible code for the deployment of Infor technologies OCCM and IA products (Java Application with MS SQL backend and HTTP and SMTP public facing services) Single region, multi-AZ deployment. Implemented HLD to POC and Production. Designed and implemented basic build, test, deploy pipeline for future expansion and product upgrades utilising three separate AWS accounts per environment (dev, test, prod).</li>
                     <li>Championed data siloing and least privilege separation for AAA services. covering Windows AD and interdomain trust relationships for both data and application teams.</li>
@@ -572,7 +606,12 @@ export default function Layout() {
                   <p className="font-bold text-gray-800 dark:text-gray-200 m-2">
                     <span className="font-medium">Linux System Administrator</span>
                   </p>
-                  <ul className="list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                  <ul className="short list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                    <li>Automated Oracle Java and Retail Stack installation using Ansible.</li>
+                    <li>Planned FreeIPA configuration for DNS, Kerberos, and user management.</li>
+                    <li>Supported Oracle Retail developers with JVM tuning, batch scheduling, and monitoring.</li>
+                  </ul>
+                  <ul className="long list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
                     <li>Part-automated installation of or Oracle Java and Oracle Retail Stack using Ansible. OS to APP</li>
                     <li>Implementation plan for FreeIPA configuration for DNS, Kerberos and User Management role out.</li>
                     <li>Supported Oracle Retail Developers on JVM tuning and batch process scheduling and monitoring and alerting.</li>
@@ -591,7 +630,12 @@ export default function Layout() {
                   <p className="font-bold text-gray-800 dark:text-gray-200 m-2">
                     <span className="font-medium">DevOps Engineer</span>
                   </p>
-                  <ul className="list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                  <ul className="short list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                    <li>Built Hortonworks HDP cluster on Mac G5s, configured OpenVPN, FreeIPA, and ML toolsets (Spark, TensorFlow, PySpark).</li>
+                    <li>Developed Ansible playbooks for HDP/Ambari bootstrap and migrated datasets to HDFS.</li>
+                    <li>Configured Cisco switching infrastructure.</li>
+                  </ul>
+                  <ul className="long list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
                     <li>Onsite Hortonworks HDP Cluster buildout - OS Install and HDP Configuration on 3 x Mac G5s</li>
                     <li>OpenVPN Configuration for remote access</li>
                     <li>FreeIPA configuration for DNS, Kerberos and User Management</li>
@@ -614,7 +658,12 @@ export default function Layout() {
                   <p className="font-bold text-gray-800 dark:text-gray-200 m-2">
                     <span className="font-medium">DevOps Engineer</span>
                   </p>
-                  <ul className="list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                  <ul className="short list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                    <li>Built AWS Hortonworks HDP cluster with EC2, VPC, and S3 configurations.</li>
+                    <li>Managed IAM users, S3 buckets, and secure data sharing for data science teams.</li>
+                    <li>Conducted AWS infrastructure security review and implemented standard recommendations.</li>
+                  </ul>
+                  <ul className="long list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
                     <li>AWS Hortonworks HDP cluster buildout on AWS EC2 Instances and Associated VPC, S3 Bucket Configuration.</li>
                     <li>AWS IAM User creation and management</li>
                     <li>S3 Bucket Configuration for Data Operations</li>
