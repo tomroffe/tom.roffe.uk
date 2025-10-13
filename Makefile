@@ -21,3 +21,7 @@ start-production: ## Start the production docker container.
 .PHONY: stop-production
 stop-production: ## Stop the production docker container.
 	docker compose -f docker/production/compose.yaml down
+
+.PHONY: build-push-multiarch
+build-push-multiarch:
+	docker buildx build --push -t ghcr.io/tomroffe/tom-roffe-uk:latest --platform=linux/arm64,linux/amd64 docker/production/Dockerfile

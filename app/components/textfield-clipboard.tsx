@@ -45,6 +45,7 @@ export default function CopyTextInput() {
           value={text}
           disabled // Disable editing
           className="w-full max-w"
+          aria-label="Text"
         />
         <Button
           onClick={copyTextToClipboard}

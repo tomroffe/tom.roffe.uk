@@ -36,6 +36,8 @@ RUN \
 
 # Production image, copy all the files and run next
 FROM base AS runner
+LABEL org.opencontainers.image.source=https://github.com/tomroffe/tom.roffe.uk
+LABEL org.opencontainers.image.description="Tom Roffe's Personal Web Page"
 WORKDIR /app
 
 ENV NODE_ENV=production

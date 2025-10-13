@@ -2,7 +2,15 @@
 @plugin "flowbite-react/plugin/tailwindcss";
 @source "../.flowbite-react/class-list.json";
 
-@custom-variant dark (&:where(.dark, .dark *));
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+
+@custom-variant dark {
+    @media not print {
+        &:where(.dark, .dark *) {
+            @slot
+        }
+    }
+}
 
 body.show-long .long {
   display: block;

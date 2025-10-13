@@ -1,9 +1,10 @@
+name: tom.roffe.uk
 services:
   tom-roffe-uk:
     build:
       context: ../../
       dockerfile: docker/production/Dockerfile
-    image: tom-roffe-uk
+    image: ghcr.io/tomroffe/tom-roffe-uk:latest
     ports:
       - "3000:3000"
     environment:
