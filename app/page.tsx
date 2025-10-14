@@ -12,8 +12,7 @@ export default function Home() {
       <div className="flex grow flex-col gap-4 md:flex-row not-dark:bg-gray-200 dark:bg-gray-800">
         <Image
           src={WaterlooBridge}
-          width={2000}
-          className="h-[calc(100vh-80px)] hidden md:block mx-auto max-w-full not-dark:invert"
+          className="h-[calc(100vh-80px)] block mx-auto max-w-full not-dark:invert"
           alt="London skyline of Waterloo bridge with the city and St Paul's in the background. Taken from the walk bridge at Charing Cross."
           priority={true}
           style={{
