@@ -24,4 +24,4 @@ stop-production: ## Stop the production docker container.
 
 .PHONY: build-push-multiarch
 build-push-multiarch:
-	docker buildx build --push -t ghcr.io/tomroffe/tom-roffe-uk:latest --platform=linux/arm64,linux/amd64 docker/production/Dockerfile
+	docker buildx build --push -t ghcr.io/tomroffe/tom-roffe-uk:latest --platform=linux/arm64,linux/amd64 -f ./docker/production/Dockerfile .

@@ -94,7 +94,7 @@ export default function Layout() {
                       I enjoy many different aspects of computing, maths, science and technology. I&apos;m currently working on several small personal projects with prototyping and control interface hardware (Arduino and RPis). Additionally, I&apos;m working on creating a Stratum 1 NTP server based on the Raspberry Pi platform using GPS as a time source.
                     </p>
                     <p className="m-2 px-2 dark:text-gray-300 font-light">
-                      I&apos;m currently a member at a local Weightlifting gym where I regularly go to practise Olympic weightlifting and CrossFit style circuit training and I&apos;m also a keen photographer in my spare time.
+                      I&apos;m currently a member at a local Weightlifting gym where I regularly go to practise Olympic weightlifting and CrossFit style circuit training and I&apos;m also a keen photographer and garder in my spare time.
                     </p>
                   </div>
                 </div>
@@ -322,17 +322,23 @@ export default function Layout() {
                   <span className="font-medium">Lead DevOps Engineer</span>
                 </p>
                 <ul className="short list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
-                  <li>Reimplemented CICD platform with greatly improved GitOps intergrations, built times, packaging, build security and integrity (signing, SBOM) for all product platforms and languages</li>
-                  <li>Improved product features and deployments, monitoring and alerting</li>
-                  <li>Enchanced, updated and added security posture. Identifity management and authentication.</li>
+                  <li>Built a cloud backup solution using GCS and AWS S3, with hourly scheduling, cutting data loss risk by 50%. Automated encryption and developed a scalable Python executor.</li>
+                  <li>Designed a Kubernetes Operator with DevOps, replacing Helm, reducing deployment complexity by 30%.</li>
+                  <li>Improved SNAT/CGNAT deployments with a Python IP mapper, cutting logging overhead by 40% and supporting RFC-4787.</li>
+                  <li>Led R&amp;D for Cilium/Multus CNIs, enabling multi-NIC traffic servers, improving latency and security.</li>
+                  <li>Implemented a secure Thanos/Prometheus monitoring platform with mTLS, using Terraform and Helm, reducing setup time by 20%.</li>
+                  <li>Migrated CI/CD to Jenkins, supporting multi-platform builds, improving reliability by 35%. Built a shared Groovy library and a cost-effective Raspberry Pi ARM cluster.</li>
+                  <li>Enhanced security with Git code signing, mandatory pull requests, and OAuth2 via Azure AD/Entra, integrating in-toto and OPA for supply chain security.</li>
                 </ul>
                 <ul className="long list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
-                  <li>Backups</li>
-                  <li>Monitoring Thanos Terraform, Product Intergration</li>
-                  <li>IP SNAT Port Range Mapper for LI</li>
-                  <li>Intergrated Cilium and Multis CNIs into product Helm chart. Intergrated Prometheus</li>
-                  <li>Intergrated Cilium and Multis CNIs into product Helm chart.</li>
-                  <li>CI/CD Migration from GOCD to Containerised Jenkins. Multiplatform ARM, AMD, Multiproject Embeded Builds, Cross Arch Builds for Core C product</li>
+                  <li>Architected and deployed a cloud-based backup solution integrated into the application stack for managed customers, leveraging Google Cloud Storage (GCS) and AWS S3. Implemented hourly scheduling for granular data recovery, reducing potential data loss windows by 50%. Automated key and certificate management for encryption at rest and in transit, enhancing security compliance. Developed a containerized Python-based executor, improving scalability and deployment efficiency.</li>
+                  <li>Collaborated with the Head of DevOps to begin the design and implementation of a Kubernetes Operator, replacing Helm deployments to streamline application management. Leveraged operational expertise to reduce deployment complexity by 30%, improving reliability and maintainability of containerized workloads.</li>
+                  <li>Initiated discussions on SNAT and CGNAT deployment improvements, driving alignment on compliance and efficiency goals. Developed a Python-based IP SNAT port range mapper to support legal intercept requests and enable deterministic NAT, reducing logging overhead by 40% and laying the groundwork for RFC-4787 implementation.</li>
+                  <li>Led R&amp;D efforts to implement Cilium and Multus CNIs for multi-NIC containerized traffic server nodes, enabling containerized traffic servers. Reduced latency, improved traffic isolation, enhancing system reliability, security, and management.</li>
+                  <li>Designed and implemented a multi-tenant Thanos/Prometheus monitoring platform with mTLS-based client authentication, ensuring secure and isolated monitoring for managed customer traffic. Utilized Terraform for infrastructure-as-code and integrated with Helm for seamless client-side product deployment, reducing setup time by 20%.</li>
+                  <li>Spearheaded CI/CD migration from GoCD to containerized Jenkins, supporting multi-platform (ARM, x86-64) builds for PHP/Laravel, Python, Java, Swift, and C projects. Configured iOS builds using static Mac Mini agents and containerized Android builds, improving build reliability by 35%. Developed a shared Jenkins Groovy library to standardize build patterns, reducing pipeline development time.</li>
+                  <li>Engineered a Raspberry Pi-based ARM build cluster to support CI/CD pipelines, reducing infrastructure costs.</li>
+                  <li>Strengthened internal security and supply chain integrity by implementing Git code signing, Gitflow with mandatory pull requests, and application/container signing, reducing unauthorized code risks. Defined initial product specifications for in-toto and Open Policy Agent (OPA) to enhance software supply chain security and policy enforcement. Secured all critical build services with OAuth2 authentication flows, integrated directly or proxied via Azure AD/Entra, improving access control.</li>
                 </ul>
               </div>
               <div id="job-2" className="text-gray-700 dark:text-gray-200 rounded-sm bg-gray-100 dark:bg-gray-700 p-2 mb-2">
