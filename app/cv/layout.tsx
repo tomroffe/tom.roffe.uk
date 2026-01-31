@@ -757,13 +757,106 @@ export default function Layout() {
                   <li>Designed and Built a developer self-service platform for live database export and obfuscation for using medical records in test or development environments using Ansible and Ruby Strike and a PHP front end developed on Symphony</li>
                 </ul>
               </div>
+
+
+              <div id="job-5" className="text-gray-700 dark:text-gray-200 rounded-sm bg-gray-100 dark:bg-gray-700 p-2 mb-2">
+                <div className="flex justify-between">
+                  <p className="font-medium text-gray-800 dark:text-gray-200">
+                    Claranet
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-400 text-xs font-light">
+                    October 2014 ➞ August 2014
+                  </p>
+                </div>
+                <p className="font-bold text-gray-800 dark:text-gray-200 m-2">
+                  <span className="font-medium">Linux Hosting Implementation Engineer</span>
+                </p>
+                <ul className="list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                  <li>Build out of customer solutions from predefined service offerings designed by solution architects.</li>
+                  <li>Operated across a wide and diverse set of data centres in various countries and to different designs and standards.</li>
+                  <li>3rd Line escalation point for hosted customers and a part of the On Call team.</li>
+                  <li>Deployed a number of virtual hosting platforms with a mix of Operating systems.</li>
+                  <li>Deployment of new customers to F5 and HAProxy load balancers.</li>
+                  <li>Customer first training (third party customer focused training)</li>
+                  <li>Designed and Built PXE boot environment for the automatic installation of Linux Operating Systems utilising standard UNIX tool
+                    chain. iPXE, TFTP, DHCP and a lightweight PHP front end.</li>
+                  <li>Scripting; automation and orchestration using Ansible for the deployment of various technologies. Nginx, HAProxy, Apache,
+                    MySQL, Redis and others.</li>
+                </ul>
+              </div>
+
+              <div id="job-6" className="text-gray-700 dark:text-gray-200 rounded-sm bg-gray-100 dark:bg-gray-700 p-2 mb-2">
+                <div className="flex justify-between">
+                  <p className="font-medium text-gray-800 dark:text-gray-200">
+                    NTT Europe
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-400 text-xs font-light">
+                    June 2014 ➞ December 2011
+                  </p>
+                </div>
+                <p className="font-bold text-gray-800 dark:text-gray-200 m-2">
+                  <span className="font-medium">Deployment Engineer</span>
+                </p>
+                <ul className="list-disc m-2 pl-6 dark:text-gray-300 text-gray-700 font-light text-sm">
+                  <li>This role was wide and varied in terms of responsibilities which included BAU tasks listed below, assisting in the sales & pre-sales
+                    process to ensure designs fulfil both customer requirements and operational efficiency goals, technical customer consultations
+                    (on and off-site), customer fault analysis and reporting.
+                  </li>
+                  <li>
+                    Managed and implemented new customer’s installations and migrations if required for customers with or without project
+                    management or technical architectural (TA) resources. Being a technical authority for small/medium customers after going live or
+                    as a COE being led by a technical authority for large enterprise customers.
+                  </li>
+                  <li>
+                    Stand up, configuration and migration of customers on shared and/or dedicated load balancing services from Alteon or Netscalers
+                    devices to newer Netscalers (EOL-Migrations)
+                  </li>
+                  <li>
+                    Myself and the Deployment team were pivotal in migrating over 100+ customers from a central London data centre to a new
+                    facility in Hemel Hempstead.
+                  </li>
+                  <li>
+                    Stand up, configuration and migration of customers on shared and/or dedicated load balancing services from Alteon or Netscaler
+                    devices to newer Netscalers (EOL-Migrations)
+                  </li>
+                  <li>
+                    Installation of various firewall hardware devices from a number of vendors Fortinet, Cisco, Juniper, Checkpoint and software
+                    firewalls like IPTables and Windows FW. Undertaking everything from basic configuration, to policy addition and creation, VPN
+                    creation and management, AV + IDS/IPS configuration & migrations. Configuration and management of routing tables and
+                    protocols (RIP, OSPF) in build and production.
+                  </li>
+                  <li>
+                    Ensure quality assurance tasks are completed on all installed systems ensuring the audit trail is kept up to date and accurate
+                    throughout the project life-cycle. Ensuring best practice is maintained in terms of high availability and security.
+                  </li>
+                  <li>
+                    Contribute towards the improvement of deployment processes. Feeding back feature requests and bug reports to the OSS
+                    development teams and the Systems Engineering teams.
+                  </li>
+                  <li>
+                    Coordinate and oversee tasks with other NTTE personnel worldwide for customer migrations at remote DCs and out-of hours work
+                    and maintenance. Additionally occasional travel was required to support project implementation or migrations.
+                  </li>
+                  <li>
+                    Delegate tasks to outsourced teams in the various EU Data Centres. For Example Cabling Backup Tape Rotation.
+                  </li>
+                  <li>
+                    Maintenance of technical competencies across a wide ranging set of Internet technologies with a very keen and eager attitude to
+                    learn new technical subjects within computing or not.
+                  </li>
+                  <li>
+                    Employ soft skills to assist in creating a positive experience for the customer.
+                  </li>
+                </ul>
+              </div>
+
               <div id="job-7" className="text-gray-700 dark:text-gray-200 rounded-sm bg-gray-100 dark:bg-gray-700 p-2 mb-2">
                 <div className="flex justify-between">
                   <p className="font-medium text-gray-800 dark:text-gray-200">
                     Virtual Internet Ltd
                   </p>
                   <p className="text-gray-600 dark:text-gray-400 text-xs font-light">
-                    September 2011 ➞ February 2011
+                    November 2011 ➞ February 2011
                   </p>
                 </div>
                 <p className="font-bold text-gray-800 dark:text-gray-200 m-2">
