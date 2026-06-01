@@ -22,6 +22,13 @@ start-production: ## Start the production docker container.
 stop-production: ## Stop the production docker container.
 	docker compose -f docker/production/compose.yaml down
 
+# Single source of truth for the image version: package.json.
+VERSION := $(shell node -p "require('./package.json').version")
+
 .PHONY: build-push-multiarch
 build-push-multiarch:
-	docker buildx build --push -t ghcr.io/tomroffe/tom-roffe-uk:latest --platform=linux/arm64,linux/amd64 -f ./docker/production/Dockerfile .
+	docker buildx build --push \
+		-t ghcr.io/tomroffe/tom-roffe-uk:latest \
+		-t ghcr.io/tomroffe/tom-roffe-uk:$(VERSION) \
+		--platform=linux/arm64,linux/amd64 \
+		-f ./docker/production/Dockerfile .

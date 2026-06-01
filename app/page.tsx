@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Header from '@/app/ui/header';
 
-import WaterlooBridge from 'public/WaterlooBridge.svg'
+import WaterlooBridge from '@/public/WaterlooBridge.svg'
 
 export default function Home() {
   return (
