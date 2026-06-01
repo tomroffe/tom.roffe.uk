@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@plugin "flowbite-react/plugin/tailwindcss";
+@import "flowbite-react/plugin/tailwindcss";
 @source "../.flowbite-react/class-list.json";
 
 /* @custom-variant dark (&:where(.dark, .dark *)); */
@@ -40,4 +40,360 @@ body.show-short .long {
 .long {
   transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
   overflow: hidden;
+}
+
+/* Page-break mechanics — applied during real print, whichever style is active */
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm 10mm 12mm 10mm;
+  }
+
+  body {
+    background: #fff !important;
+    font-size: 9.5pt;
+    line-height: 1.35;
+  }
+
+  *,
+  *::before,
+  *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .cv-grid {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  .cv-sidebar {
+    flex: 0 0 auto !important;
+    width: 56mm !important;
+    max-width: 56mm !important;
+  }
+
+  .cv-main {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+  }
+
+  .cv-sidebar-card > div {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  .cv-job {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 4pt !important;
+  }
+
+  /* The Altobyte block has many engagements — let the parent break,
+     but keep each individual engagement together */
+  .cv-job-with-engagements {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  .cv-engagement {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin: 3pt 0 !important;
+  }
+
+  .cv-job > div:first-child,
+  .cv-engagement > div:first-child {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  h1, h2, h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  p, li {
+    orphans: 2;
+    widows: 2;
+  }
+
+  .cv-job ul,
+  .cv-engagement ul {
+    font-size: 9pt;
+    margin: 2pt 0 !important;
+    padding-left: 14pt !important;
+    list-style-position: outside;
+  }
+
+  .cv-job li,
+  .cv-engagement li {
+    margin: 1pt 0 !important;
+  }
+}
+
+/* NameBlock visibility — hidden by default; shown for Professional/Simple,
+   and always shown in print (PrintHeader is hidden in those styles). */
+.cv-name {
+  display: none;
+}
+body.cv-style-professional .cv-name,
+body.cv-style-simple .cv-name {
+  display: block;
+}
+@media print {
+  .cv-name { display: block; }
+}
+
+/*
+  Professional — two-column with dark navy sidebar (Name + Contact + Education
+  + Hobbies + Skills) on the left, white main column with "Experience" heading
+  and clean bottom-bordered job entries on the right.
+*/
+body.cv-style-professional .cv-grid {
+  flex-direction: row !important;
+}
+
+body.cv-style-professional .cv-sidebar {
+  flex: 0 0 auto !important;
+  width: 280px !important;
+  max-width: 280px !important;
+}
+
+body.cv-style-professional .cv-sidebar-card {
+  background: #1e293b !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 1.5rem 1rem !important;
+  margin: 0 !important;
+  color: #f8fafc !important;
+}
+
+body.cv-style-professional .cv-sidebar-card,
+body.cv-style-professional .cv-sidebar-card * {
+  color: #f8fafc !important;
+}
+
+body.cv-style-professional .cv-name {
+  margin-bottom: 1.25rem !important;
+  border-bottom: 1px solid #475569 !important;
+  padding-bottom: 0.75rem !important;
+}
+body.cv-style-professional .cv-name h1 {
+  font-size: 1.75rem !important;
+  text-align: left !important;
+  line-height: 1.1 !important;
+  color: #ffffff !important;
+}
+body.cv-style-professional .cv-name .cv-title {
+  color: #67e8f9 !important;
+}
+
+body.cv-style-professional .cv-contact > div a,
+body.cv-style-professional .cv-contact > div {
+  color: #f8fafc !important;
+}
+
+body.cv-style-professional .cv-education > p:first-child,
+body.cv-style-professional .cv-hobbies > p:first-child,
+body.cv-style-professional .cv-skills > p:first-child {
+  color: #67e8f9 !important;
+  text-transform: uppercase !important;
+  font-size: 0.7rem !important;
+  letter-spacing: 0.08em !important;
+  border-bottom: 1px solid #475569 !important;
+  padding-bottom: 0.25rem !important;
+  margin: 1rem 0 0.5rem !important;
+}
+
+body.cv-style-professional .cv-sidebar .cv-tag {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 0.25rem 0 0 !important;
+  color: #cbd5e1 !important;
+}
+
+body.cv-style-professional .cv-main {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  padding: 0 1rem !important;
+}
+
+body.cv-style-professional .cv-main::before {
+  content: 'Experience';
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  border-left: 4px solid #0ea5e9;
+  padding: 0 0 0 0.5rem;
+  margin: 1rem 0 0.5rem;
+}
+
+body.cv-style-professional .cv-job {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0.75rem 0 !important;
+  margin: 0 !important;
+}
+
+body.cv-style-professional .cv-engagement {
+  background: #f8fafc !important;
+  border: none !important;
+  border-left: 2px solid #cbd5e1 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0.5rem 0.75rem !important;
+  margin: 0.5rem 0 0.5rem 1rem !important;
+}
+
+body.cv-style-professional .cv-print-header {
+  display: none !important;
+}
+
+/* Darken the page in dark mode so the navy sidebar reads as a distinct
+   raised panel instead of blending into the near-identical gray-800 page. */
+.dark body.cv-style-professional main {
+  background: #0f172a !important; /* slate-900 — darker than the #1e293b sidebar */
+}
+.dark body.cv-style-professional .cv-sidebar-card {
+  border: 1px solid #334155 !important;
+}
+.dark body.cv-style-professional .cv-main::before {
+  color: #f8fafc !important;
+}
+.dark body.cv-style-professional .cv-job {
+  border-bottom-color: #334155 !important;
+}
+.dark body.cv-style-professional .cv-engagement {
+  background: #1e293b !important;
+  border-left-color: #475569 !important;
+}
+
+/*
+  Simple — single-column minimalist. NameBlock centered uppercase at top with
+  thick rule under it; contact inline-centered; sections under bold uppercase
+  headings: TECHNICAL SKILLS / WORK EXPERIENCE / EDUCATION. No sidebar, no
+  hobbies.
+*/
+body.cv-style-simple .cv-grid-flat {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.25rem !important;
+  max-width: 760px !important;
+  margin: 0 auto !important;
+  padding: 1rem !important;
+}
+
+body.cv-style-simple .cv-name {
+  text-align: center !important;
+  border-bottom: 2px solid #1f2937 !important;
+  padding-bottom: 0.75rem !important;
+  margin: 0 !important;
+}
+body.cv-style-simple .cv-name h1 {
+  font-size: 2rem !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+}
+body.cv-style-simple .cv-name p,
+body.cv-style-simple .cv-name .cv-title {
+  text-align: center !important;
+  font-size: 0.875rem !important;
+  color: #4b5563 !important;
+}
+
+body.cv-style-simple .cv-contact {
+  text-align: center !important;
+  padding: 0 !important;
+}
+body.cv-style-simple .cv-contact > div {
+  display: inline-flex !important;
+  margin: 0 0.5rem !important;
+}
+body.cv-style-simple .cv-contact > div + div::before {
+  content: '|';
+  margin-right: 0.75rem;
+  color: #9ca3af;
+}
+
+body.cv-style-simple .cv-skills > p:first-child,
+body.cv-style-simple .cv-education > p:first-child {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  border-bottom: 1px solid #d1d5db !important;
+  padding-bottom: 0.25rem !important;
+  margin: 0 0 0.5rem !important;
+  color: #1f2937 !important;
+}
+
+body.cv-style-simple .cv-main::before {
+  content: 'Work Experience';
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #d1d5db;
+  padding-bottom: 0.25rem;
+  margin: 0 0 0.5rem;
+  color: #1f2937;
+}
+
+body.cv-style-simple .cv-job,
+body.cv-style-simple .cv-engagement {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+body.cv-style-simple .cv-job {
+  padding: 0 !important;
+  margin: 0 0 1rem !important;
+}
+
+body.cv-style-simple .cv-engagement {
+  border-left: 2px solid #e5e7eb !important;
+  padding: 0.25rem 0 0.25rem 0.75rem !important;
+  margin: 0.5rem 0 0.5rem 1rem !important;
+}
+
+body.cv-style-simple .cv-tag {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 0.25rem 0 0 !important;
+  color: inherit !important;
+}
+
+body.cv-style-simple .cv-print-header {
+  display: none !important;
+}
+
+.dark body.cv-style-simple .cv-grid-flat {
+  color: #e5e7eb !important; /* base body text — gray-200 */
+}
+.dark body.cv-style-simple .cv-name { border-bottom-color: #f3f4f6 !important; }
+.dark body.cv-style-simple .cv-name p,
+.dark body.cv-style-simple .cv-name .cv-title { color: #9ca3af !important; }
+.dark body.cv-style-simple .cv-skills > p:first-child,
+.dark body.cv-style-simple .cv-education > p:first-child,
+.dark body.cv-style-simple .cv-main::before {
+  color: #f3f4f6 !important;
+  border-bottom-color: #4b5563 !important;
+}
+.dark body.cv-style-simple .cv-contact > div + div::before {
+  color: #6b7280 !important;
+}
+.dark body.cv-style-simple .cv-tag {
+  color: #cbd5e1 !important; /* slightly muted for tag items */
+}
+.dark body.cv-style-simple .cv-engagement {
+  border-left-color: #4b5563 !important;
 }

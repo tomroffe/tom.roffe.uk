@@ -23,7 +23,7 @@ const ContentToggle: React.FC = () => {
   }, [isShort]);
 
   return (
-    <div className="inline-flex items-center cursor-pointer mr-5">
+    <div className="inline-flex items-center cursor-pointer">
       <span className="mr-3 text-sm font-medium text-gray-900 dark:text-gray-300">Long</span>
       <ToggleSwitch
         checked={isShort}
