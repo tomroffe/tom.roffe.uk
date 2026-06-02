@@ -24,14 +24,14 @@
       },
       {
         "name": "IRATA",
-        "note": "Level 1 2014➞2016"
+        "note": "Level 1 2014➞Current"
       },
       {
         "name": "Installation & Testing of Class A1 Anchors"
       },
       {
-        "name": "First Aid Course",
-        "note": "Expired"
+        "name": "Nuco Emergency First Aid at Work",
+        "note": "2026"
       },
       {
         "name": "Selecting Winners Training"
@@ -221,8 +221,16 @@
       "role": "Operations Manager",
       "dates": "October 2025 ➞ Present",
       "bullets": {
-        "short": [],
-        "long": []
+        "long": [
+          "Built a competency-tracking system mapping the IRATA syllabus to per-level requirements (Levels 1–3) across three attainment tiers, standardising course checklists and improving assessment consistency and audit-readiness.",
+          "Streamlined booking and session-management workflows with improved scheduling tools and live reporting, giving the bookings team real-time visibility of registrations and fill rates."
+        ],
+        "shared": [
+          "Optimised course scheduling using historical fill-rate analysis, consolidating a weekly cadence into a 3-on/1-off rhythm that lifted average course occupancy from ~67% to ~89% while running fewer courses — cutting instructor time and overheads without losing capacity.",
+          "Digitised IRATA rope access training operations by designing and delivering a custom management platform to track candidate registrations, certification levels, assessment outcomes, and logbook hours, replacing manual record-keeping.",
+          "Implemented a digital equipment-tracking and PPE inspection regime, enrolling the company's equipment onto Scanable.io to give each item a scannable record — keeping inspections logged, in-date, and traceable for IRATA/LOLER compliance and audit.",
+          "Expanded the training portfolio by onboarding Nuco Training as an accredited partner, adding Emergency First Aid at Work to the course offering and broadening the revenue base."
+        ]
       }
     },
     {
@@ -263,18 +271,6 @@
           "role": "Senior DevOps Engineer",
           "dates": "May 23 ➞ March 24 (3 months rolling)",
           "bullets": {
-            "long": [
-              "Supported three teams (IOS, Android, Big Screen) BAU operations in all areas of operation for building, testing, signing and release. Managed production crash/debug analytics environments Sentry 9.x, self-hosted GitLab instance, vCenter and associated compute and storage (Synology). Managed hybrid mix of local and virtual mac and virtual compute (Ask me about it!). LXC containers.",
-              "Migrated on-prem Kubernetes clusters’ workloads to Sky’s GKE based cloud Kubernetes cluster. On-prem used MetalLB and Ceph. Migrated Helm based applications to Terraform HCL. Including three Jenkins and Sentry.",
-              "Re-write Python 2 application to Python 3 (3.11) and reimplemented application infrastructure storage – PV storage to object-storage based FUSE container driver. Implement authentication and TLS.",
-              "Designed and built a replacement to Jenkins Groovy scripting for release uploads/artifact submission to a custom Sky endpoint. Removing team dependencies on a legacy Jenkins pipeline. Implemented new functionally in teams Gitlab pipeline.",
-              "Sourced, designed and migrated old physical switching infrastructure. Replaced existing 10G switches access switches and refreshed the core/aggregation layer switches. Simplified design due to changing compute requirements.",
-              "Installed new Mac Mini shelfing, hardware (64 M2s). Part refitted and re-cabled data racking around compute needs and lack of HA/Dual homed power/networking on Mac Mini hardware.",
-              "POC evaluation with IOS team evaluating migrating CICD to CircleCI from Self hosted Gitlab. Resulting in the continuation of the GitLab with some",
-              "Interviewed several candidates for DevOps positions within the department. Successfully onboarded two engineers to help support the team ongoing. Worked with Grad team to containerise, secure, and deploy a reporting application. Managed work",
-              "Re-platformed and rearchitected the existing K8 Jenkins CICD platforms for IOS. Migrated Jenkins Master on Virtual Mac OSX Instances to Kubernetes (GKE). Moved local secrets management to Google Secrets Manager. Adapted multibranch and pipeline jobs aligning with Sky’s Jenkins Security Policy. Defined, designed and tested job history retention, backup and restore. Improved asset/cache storage. Implemented group-based AD matrix authentication. Automated backup, plugin updates with git versioned Jenkins configuration as code. Security hardening, SSH whitelisting. Moved all agents to web sockets. Prometheus metric exporting. Grafana monitoring dashboard definitions.",
-              "Replaced Jenkins CICD platforms for Android and Big Screen/Desktop Teams using experience gained from IOS team migration. Additionally worked with the teams to adapt to the new environments, including adapting pipelines, creating custom build containers, adapted signing operations."
-            ],
             "short": [
               "Replaced Jenkins CICD platforms for Android and Big Screen/Desktop Teams using experience gained from IOS team migration. Additionally worked with the teams to adapt to the new environments, including adapting pipelines, creating custom build containers, adapted signing operations.",
               "Supported iOS, Android, and Big Screen teams in BAU operations for building, testing, signing, and releasing applications.",
@@ -288,6 +284,18 @@
               "Onboarded two DevOps engineers; supported grad team in containerizing and deploying a reporting app.",
               "Re-platformed iOS Jenkins CI/CD to GKE, integrated Google Secrets Manager, enhanced security, and automated backups.",
               "Upgraded Android and Big Screen Jenkins CI/CD, adapting pipelines and build containers."
+            ],
+            "long": [
+              "Supported three teams (IOS, Android, Big Screen) BAU operations in all areas of operation for building, testing, signing and release. Managed production crash/debug analytics environments Sentry 9.x, self-hosted GitLab instance, vCenter and associated compute and storage (Synology). Managed hybrid mix of local and virtual mac and virtual compute (Ask me about it!). LXC containers.",
+              "Migrated on-prem Kubernetes clusters’ workloads to Sky’s GKE based cloud Kubernetes cluster. On-prem used MetalLB and Ceph. Migrated Helm based applications to Terraform HCL. Including three Jenkins and Sentry.",
+              "Re-write Python 2 application to Python 3 (3.11) and reimplemented application infrastructure storage – PV storage to object-storage based FUSE container driver. Implement authentication and TLS.",
+              "Designed and built a replacement to Jenkins Groovy scripting for release uploads/artifact submission to a custom Sky endpoint. Removing team dependencies on a legacy Jenkins pipeline. Implemented new functionally in teams Gitlab pipeline.",
+              "Sourced, designed and migrated old physical switching infrastructure. Replaced existing 10G switches access switches and refreshed the core/aggregation layer switches. Simplified design due to changing compute requirements.",
+              "Installed new Mac Mini shelfing, hardware (64 M2s). Part refitted and re-cabled data racking around compute needs and lack of HA/Dual homed power/networking on Mac Mini hardware.",
+              "POC evaluation with IOS team evaluating migrating CICD to CircleCI from Self hosted Gitlab. Resulting in the continuation of the GitLab with some",
+              "Interviewed several candidates for DevOps positions within the department. Successfully onboarded two engineers to help support the team ongoing. Worked with Grad team to containerise, secure, and deploy a reporting application. Managed work",
+              "Re-platformed and rearchitected the existing K8 Jenkins CICD platforms for IOS. Migrated Jenkins Master on Virtual Mac OSX Instances to Kubernetes (GKE). Moved local secrets management to Google Secrets Manager. Adapted multibranch and pipeline jobs aligning with Sky’s Jenkins Security Policy. Defined, designed and tested job history retention, backup and restore. Improved asset/cache storage. Implemented group-based AD matrix authentication. Automated backup, plugin updates with git versioned Jenkins configuration as code. Security hardening, SSH whitelisting. Moved all agents to web sockets. Prometheus metric exporting. Grafana monitoring dashboard definitions.",
+              "Replaced Jenkins CICD platforms for Android and Big Screen/Desktop Teams using experience gained from IOS team migration. Additionally worked with the teams to adapt to the new environments, including adapting pipelines, creating custom build containers, adapted signing operations."
             ]
           }
         },

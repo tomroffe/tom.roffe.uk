@@ -142,7 +142,10 @@ body.cv-style-simple .cv-name {
   display: block;
 }
 @media print {
-  .cv-name { display: block; }
+  body.cv-style-professional .cv-name,
+  body.cv-style-simple .cv-name {
+    display: block;
+  }
 }
 
 /*
