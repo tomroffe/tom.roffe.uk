@@ -226,7 +226,7 @@
           "Streamlined booking and session-management workflows with improved scheduling tools and live reporting, giving the bookings team real-time visibility of registrations and fill rates."
         ],
         "shared": [
-          "Optimised course scheduling using historical fill-rate analysis, consolidating a weekly cadence into a 3-on/1-off rhythm that lifted average course occupancy from ~67% to ~89% while running fewer courses — cutting instructor time and overheads without losing capacity.",
+          "Optimised course scheduling using historical fill-rate analysis, consolidating a weekly cadence into a 3-on/1-off rhythm that lifted average course occupancy from ~65% to ~85% while running fewer courses — cutting instructor time and overheads without losing capacity.",
           "Digitised IRATA rope access training operations by designing and delivering a custom management platform to track candidate registrations, certification levels, assessment outcomes, and logbook hours, replacing manual record-keeping.",
           "Implemented a digital equipment-tracking and PPE inspection regime, enrolling the company's equipment onto Scanable.io to give each item a scannable record — keeping inspections logged, in-date, and traceable for IRATA/LOLER compliance and audit.",
           "Expanded the training portfolio by onboarding Nuco Training as an accredited partner, adding Emergency First Aid at Work to the course offering and broadening the revenue base."
@@ -240,21 +240,18 @@
       "dates": "March 2024 ➞ October 2025",
       "bullets": {
         "short": [
-          "Built a cloud backup solution using GCS and AWS S3, with hourly scheduling, cutting data loss risk by 50%. Automated encryption and developed a scalable Python executor.",
-          "Designed a Kubernetes Operator with DevOps, replacing Helm, reducing deployment complexity by 30%.",
           "Improved SNAT/CGNAT deployments with a Python IP mapper, cutting logging overhead by 40% and supporting RFC-4787.",
           "Led R&D for Cilium/Multus CNIs, enabling multi-NIC traffic servers, improving latency and security.",
-          "Implemented a secure Thanos/Prometheus monitoring platform with mTLS, using Terraform and Helm, reducing setup time by 20%.",
-          "Migrated CI/CD to Jenkins, supporting multi-platform builds, improving reliability by 35%. Built a shared Groovy library and a cost-effective Raspberry Pi ARM cluster.",
+          "Implemented a secure Thanos/Prometheus monitoring platform with mTLS, using Terraform and Helm, reducing potential setup time for customer on-boarding.",
+          "Migrated GoCD CI/CD to Jenkins, supporting multi-platform builds, improving reliability. Built a shared Groovy library and a cost-effective Raspberry Pi ARM cluster.",
           "Enhanced security with Git code signing, mandatory pull requests, and OAuth2 via Azure AD/Entra, integrating in-toto and OPA for supply chain security."
         ],
         "long": [
-          "Architected and deployed a cloud-based backup solution integrated into the application stack for managed customers, leveraging Google Cloud Storage (GCS) and AWS S3. Implemented hourly scheduling for granular data recovery, reducing potential data loss windows by 50%. Automated key and certificate management for encryption at rest and in transit, enhancing security compliance. Developed a containerized Python-based executor, improving scalability and deployment efficiency.",
-          "Collaborated with the Head of DevOps to begin the design and implementation of a Kubernetes Operator, replacing Helm deployments to streamline application management. Leveraged operational expertise to reduce deployment complexity by 30%, improving reliability and maintainability of containerized workloads.",
+          "Architected and deployed a cloud-based backup solution integrated into the application stack for managed customers, leveraging Google Cloud Storage (GCS) and AWS S3. Implemented hourly scheduling for granular data recovery. Automated key and certificate management for encryption at rest and in transit. ",
           "Initiated discussions on SNAT and CGNAT deployment improvements, driving alignment on compliance and efficiency goals. Developed a Python-based IP SNAT port range mapper to support legal intercept requests and enable deterministic NAT, reducing logging overhead by 40% and laying the groundwork for RFC-4787 implementation.",
           "Led R&D efforts to implement Cilium and Multus CNIs for multi-NIC containerized traffic server nodes, enabling containerized traffic servers. Reduced latency, improved traffic isolation, enhancing system reliability, security, and management.",
-          "Designed and implemented a multi-tenant Thanos/Prometheus monitoring platform with mTLS-based client authentication, ensuring secure and isolated monitoring for managed customer traffic. Utilized Terraform for infrastructure-as-code and integrated with Helm for seamless client-side product deployment, reducing setup time by 20%.",
-          "Spearheaded CI/CD migration from GoCD to containerized Jenkins, supporting multi-platform (ARM, x86-64) builds for PHP/Laravel, Python, Java, Swift, and C projects. Configured iOS builds using static Mac Mini agents and containerized Android builds, improving build reliability by 35%. Developed a shared Jenkins Groovy library to standardize build patterns, reducing pipeline development time.",
+          "Designed and implemented a multi-tenant Thanos/Prometheus monitoring platform with mTLS-based client authentication, ensuring secure and isolated monitoring for managed customer traffic. Utilised Terraform for infrastructure-as-code and integrated with Helm for seamless client-side product deployment.",
+          "Spearheaded CI/CD migration from GoCD to containerised Jenkins, supporting multi-platform (ARM, x86-64) builds for PHP/Laravel, Python, Java, Swift, and C projects. Configured iOS builds using static Mac Mini agents and containerised Android builds. Developed a shared Jenkins Groovy library to standardise build patterns, reducing pipeline development time.",
           "Engineered a Raspberry Pi-based ARM build cluster to support CI/CD pipelines, reducing infrastructure costs.",
           "Strengthened internal security and supply chain integrity by implementing Git code signing, Gitflow with mandatory pull requests, and application/container signing, reducing unauthorized code risks. Defined initial product specifications for in-toto and Open Policy Agent (OPA) to enhance software supply chain security and policy enforcement. Secured all critical build services with OAuth2 authentication flows, integrated directly or proxied via Azure AD/Entra, improving access control."
         ]
