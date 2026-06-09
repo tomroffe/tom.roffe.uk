@@ -53,8 +53,8 @@
     ]
   },
   "hobbies": [
-    "I enjoy many different aspects of computing, maths, science and technology. I'm currently working on several small personal projects with prototyping and control interface hardware (Arduino and RPis). Additionally, I'm working on creating a Stratum 1 NTP server based on the Raspberry Pi platform using GPS as a time source.",
-    "I'm currently a member at a local Weightlifting gym where I regularly go to practise Olympic weightlifting and CrossFit style circuit training and I'm also a keen photographer and gardener in my spare time."
+    "I enjoy many different aspects of computing, maths, science and technology. I'm currently working on several small personal projects with prototyping and control interface hardware.",
+    "I'm currently a member at a local Weightlifting gym where I regularly go to practise Olympic weightlifting and CrossFit style circuit training and I'm also a keen photographer, gardener and father to an amazing boy called Arthur."
   ],
   "languages": ["Python", "Go", "BASH", "JavaScript", "HTML", "CSS", "Rust"],
   "platforms": [
