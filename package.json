@@ -1,6 +1,6 @@
 {
-  "name": "flowbite-react-template-nextjs",
-  "version": "0.4.0",
+  "name": "tom-roffe-uk",
+  "version": "0.5.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
